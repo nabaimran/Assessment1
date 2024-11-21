@@ -1,12 +1,12 @@
 # 4. Primitive Quiz 
 
-answer = input("What is the capital of France? ")
-if answer.lower() == "paris":
+answer = input("What is the capital of France? ").strip().lower()
+if answer == "paris":
     print("Correct!")
 else:
     print("Wrong answer.")
 
-# Advanced version with multiple questions
+# multiple questions
 questions = {
     "What is the capital of Germany?": "berlin",
     "What is the capital of France?": "paris",
